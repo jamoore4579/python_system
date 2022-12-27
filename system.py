@@ -150,10 +150,10 @@ class Bill_App:
         limka_txt = Entry(F4, width=10, textvariable=self.limka, font=('times new roman', 16, 'bold'), bd=5, relief=GROOVE)
         limka_txt.grid(row=1, column=1, padx=10, pady=10)
 
-        mazza_lbl = Label(F4, text="Mazza", font=('times new roman', 16, 'bold'), bg="#badc57", fg="black")
-        mazza_lbl.grid(row=2, column=0, padx=10, pady=10, sticky='W')
-        wheat_txt = Entry(F4, width=10, textvariable=self.mazza, font=('times new roman', 16, 'bold'), bd=5, relief=GROOVE)
-        wheat_txt.grid(row=2, column=1, padx=10, pady=10)
+        pepsi_lbl = Label(F4, text="Pepsi", font=('times new roman', 16, 'bold'), bg="#badc57", fg="black")
+        pepsi_lbl.grid(row=2, column=0, padx=10, pady=10, sticky='W')
+        pepsi_txt = Entry(F4, width=10, textvariable=self.pepsi, font=('times new roman', 16, 'bold'), bd=5, relief=GROOVE)
+        pepsi_txt.grid(row=2, column=1, padx=10, pady=10)
 
         coke_lbl = Label(F4, text="Coke", font=('times new roman', 16, 'bold'), bg="#badc57", fg="black")
         coke_lbl.grid(row=3, column=0, padx=10, pady=10, sticky='W')
@@ -165,10 +165,10 @@ class Bill_App:
         fanta_txt = Entry(F4, width=10, textvariable=self.fanta, font=('times new roman', 16, 'bold'), bd=5, relief=GROOVE)
         fanta_txt.grid(row=4, column=1, padx=10, pady=10)
 
-        mountain_duo_lbl = Label(F4, text="Mountain Duo", font=('times new roman', 16, 'bold'), bg="#badc57", fg="black")
-        mountain_duo_lbl.grid(row=5, column=0, padx=10, pady=10, sticky='W')
-        mountain_duo_txt = Entry(F4, width=10, textvariable=self.mountain_duo, font=('times new roman', 16, 'bold'), bd=5, relief=GROOVE)
-        mountain_duo_txt.grid(row=5, column=1, padx=10, pady=10)
+        mountain_dew_lbl = Label(F4, text="Mountain Dew", font=('times new roman', 16, 'bold'), bg="#badc57", fg="black")
+        mountain_dew_lbl.grid(row=5, column=0, padx=10, pady=10, sticky='W')
+        mountain_dew_txt = Entry(F4, width=10, textvariable=self.mountain_dew, font=('times new roman', 16, 'bold'), bd=5, relief=GROOVE)
+        mountain_dew_txt.grid(row=5, column=1, padx=10, pady=10)
     # =================BillArea======================
         F5 = Frame(self.root, bd=10, relief=GROOVE)
         F5.place(x=1010, y=180, width=350, height=380)
