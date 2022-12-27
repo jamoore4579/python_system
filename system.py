@@ -1,4 +1,4 @@
-from tkinter import*
+from tkinter import *
 import random
 import os
 from tkinter import messagebox
@@ -10,7 +10,7 @@ class Bill_App:
         self.root.geometry("1350x700+0+0")
         self.root.title("Billing Software")
         bg_color = "#badc57"
-        title = Label(self.root, text="Billing Software", font=('times new roman', 30, 'bold'), pady=2, bd=12, bg="badc57", fg="Black", relief=GROOVE)
+        title = Label(self.root, text="Billing Software", font=('times new roman', 30, 'bold'), pady=2, bd=12, bg="#badc57", fg="Black", relief=GROOVE)
         title.pack(fill=X)
     # ======variables==========
         self.sanitizer = IntVar ()
@@ -29,10 +29,10 @@ class Bill_App:
         #=============colddrinks=============================
         self.sprite = IntVar()
         self.limka = IntVar()
-        self.mazza = IntVar()
+        self.pepsi = IntVar()
         self.coke = IntVar()
         self.fanta = IntVar()
-        self.mountain_duo = IntVar()
+        self.mountain_dew = IntVar()
     # ==============Total product price================
         self.medical_price = StringVar()
         self.grocery_price = StringVar()
@@ -258,10 +258,10 @@ class Bill_App:
 
         self.c_d_s_p = self.sprite.get()*10
         self.c_d_l_p = self.limka.get()*10
-        self.c_d_m_p = self.mazza.get()*10
+        self.c_d_m_p = self.pepsi.get()*10
         self.c_d_c_p = self.coke.get()*10
         self.c_d_f_p = self.fanta.get()*10
-        self.c_m_d = self.mountain_duo.get()*10
+        self.c_m_d = self.mountain_dew.get()*10
         self.total_cold_drinks_price = float(self.c_d_s_p+self.c_d_l_p+self.c_d_m_p+self.c_d_c_p+self.c_d_f_p+self.c_m_d)
 
         self.cold_drinks_price.set("Rs. "+str(self.total_cold_drinks_price))
@@ -319,14 +319,14 @@ class Bill_App:
             self.txtarea.insert(END, f"\n Sprite\t\t{self.sprite.get()}\t\t{self.c_d_s_p}")
         if self.limka.get() != 0:
             self.txtarea.insert(END, f"\n Sanitizer\t\t{self.limka.get()}\t\t{self.c_d_l_p}")
-        if self.mazza.get() != 0:
-            self.txtarea.insert(END, f"\n Mazza\t\t{self.mazza.get()}\t\t{self.c_d_m_p}")
+        if self.pepsi.get() != 0:
+            self.txtarea.insert(END, f"\n Pepsi\t\t{self.pepsi.get()}\t\t{self.c_d_m_p}")
         if self.coke.get() != 0:
             self.txtarea.insert(END, f"\n Dettol\t\t{self.coke.get()}\t\t{self.c_d_c_p}")
         if self.fanta.get() != 0:
             self.txtarea.insert(END, f"\n Fanta\t\t{self.newsprin.get()}\t\t{self.c_d_f_p}")
-        if self.mountain_duo.get() != 0:
-            self.txtarea.insert(END, f"\n Mountain Duo\t\t{self.sanitizer.get()}\t\t{self.c_m_d}")
+        if self.mountain_dew.get() != 0:
+            self.txtarea.insert(END, f"\n Mountain Dew\t\t{self.sanitizer.get()}\t\t{self.c_m_d}")
             self.txtarea.insert(END, f"\n--------------------------------")
         # ===============taxes==============================
         if self.medical_tax.get() != '0.0':
@@ -386,10 +386,10 @@ class Bill_App:
     # =============coldDrinks=============================
             self.sprite.set(0)
             self.limka.set(0)
-            self.mazza.set(0)
+            self.pepsi.set(0)
             self.coke.set(0)
             self.fanta.set(0)
-            self.mountain_duo.set(0)
+            self.mountain_dew.set(0)
     # ====================taxes================================
             self.medical_price.set("")
             self.grocery_price.set("")
